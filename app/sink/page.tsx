@@ -31,14 +31,14 @@ const Sink = () => {
                 <div className='mt-4'>
                     {
                         features?.map(f => {
-                            return <li>{f}</li>
+                            return <li key={f}>{f}</li>
                         })
                     }
                 </div>
                 <div className='mt-4'>
                     <h2 className='my-2 text-2xl font-semibold'>  Design Process</h2>
                     <h5>
-                        Before diving deeper into the project, I’d like to highlight the design process we followed:
+                        Before diving deeper into the project, I would like to highlight the design process we followed:
                     </h5>
                     <Image
                         alt=''
@@ -63,7 +63,7 @@ const Sink = () => {
                             <h3 className='text-2xl font-bold'>Home</h3>
                             {
                                 homePage?.map(p => {
-                                    return <h4 className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
+                                    return <h4 key={p} className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
 
                                 })
                             }
@@ -75,7 +75,7 @@ const Sink = () => {
                             <h3 className='text-2xl font-bold'>Listing</h3>
                             {
                                 listing?.map(p => {
-                                    return <h4 className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
+                                    return <h4 key={p} className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
 
                                 })
                             }

@@ -6,7 +6,7 @@ export default function Project() {
             <div className=" text-3xl font-semibold mb-10">My projects</div>
             <ul role="list" className="grid grid-cols-1 gap-y-16 gap-10 sm:grid-cols-2 sm:px-0">
                 {projectsData.map((project) => (
-                    <ProjectsCard project={project} />
+                    <ProjectsCard key={project?.href} project={project} />
                 ))}
 
             </ul>
