@@ -42,7 +42,7 @@ const Sink = () => {
                 <div className='mt-4'>
                     {
                         features?.map(f => {
-                            return <li>{f}</li>
+                            return <li key={f}>{f}</li>
                         })
                     }
                 </div>
@@ -74,7 +74,7 @@ const Sink = () => {
                             <h3 className='text-2xl font-bold'>Home</h3>
                             {
                                 homePage?.map(p => {
-                                    return <h4 className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
+                                    return <h4 key={p} className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
 
                                 })
                             }
@@ -86,7 +86,7 @@ const Sink = () => {
                             <h3 className='text-2xl font-bold'>Listing</h3>
                             {
                                 listing?.map(p => {
-                                    return <h4 className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
+                                    return <h4 key={p} className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
 
                                 })
                             }
@@ -116,7 +116,7 @@ const Sink = () => {
                             <h3 className='text-2xl font-bold'>Profile </h3>
                             {
                                 profile?.map(p => {
-                                    return <h4 className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
+                                    return <h4 key={p} className='text-sm text-gray-700 pl-3 py-1'> <span>-</span>  {p}</h4>
 
                                 })
                             }
